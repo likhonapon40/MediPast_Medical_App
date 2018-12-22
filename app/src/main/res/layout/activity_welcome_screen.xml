@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".WelcomeScreenActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/icon"
+                android:layout_gravity="center"
+                app:civ_border_width="02dp"
+                app:civ_border_color="#FF000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Welcome to Medi Past"
+                android:fontFamily="@font/sofiaregular"
+                android:textColor="#b4b4b4"
+                android:textAlignment="center"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="20dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/backgroundColor"
+                    app:cardElevation="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_weight=".5"
+                    android:layout_margin="5dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/wlcmAddDoctorBtnId"
+                        android:layout_weight=".5"
+                        android:background="@drawable/circlebuttondesign"
+                        android:drawableTop="@drawable/doctorprofileimage"
+                        android:padding="20dp"
+                        android:text="Add Doctor's Profile"
+                        android:textSize="13dp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/sofiaregular"
+                        android:textColor="@color/textColorWhite"
+                        android:layout_gravity="center"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/backgroundColor"
+                    app:cardElevation="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_weight=".5"
+                    android:layout_margin="5dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/wlcmViewDoctorBtnId"
+                        android:layout_weight=".5"
+                        android:background="@drawable/circlebuttondesign"
+                        android:drawableTop="@drawable/doctorinfoimage"
+                        android:padding="20dp"
+                        android:text="View All Doctor's Info"
+                        android:textSize="13dp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/sofiaregular"
+                        android:textColor="@color/textColorWhite"
+                        android:layout_gravity="center"/>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="20dp">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/backgroundColor"
+                    app:cardElevation="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_weight=".5"
+                    android:layout_margin="5dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/wlcmAddMedicalHistoryBtnId"
+                        android:layout_weight=".5"
+                        android:background="@drawable/circlebuttondesign"
+                        android:drawableTop="@drawable/medicalhistoryimage"
+                        android:padding="20dp"
+                        android:text="Add Medical History"
+                        android:textSize="13dp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/sofiaregular"
+                        android:textColor="@color/textColorWhite"
+                        android:layout_gravity="center"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/backgroundColor"
+                    app:cardElevation="20dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_weight=".5"
+                    android:layout_margin="5dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/wlcmViewMedicalHistoryBtnId"
+                        android:layout_weight=".5"
+                        android:background="@drawable/circlebuttondesign"
+                        android:drawableTop="@drawable/viewallmedicalhistoryimage"
+                        android:padding="15dp"
+                        android:text="View All Medical History"
+                        android:textSize="13dp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/sofiaregular"
+                        android:textColor="@color/textColorWhite"
+                        android:layout_gravity="center"/>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
